@@ -11,6 +11,6 @@ const shift = function insertShift(arr, n){
     s++;
   }//close for
   return newArr;
-}//close Fx
+}//close F
 
 module.exports = shift;
