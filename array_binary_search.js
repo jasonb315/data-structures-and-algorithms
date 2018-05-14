@@ -1,6 +1,8 @@
 'use strict';
 
-var binarySearch = function(arr, val) {
+module.exports = exports = {};
+
+exports.binarySearch = function(arr, val) {
   var half = Math.floor(arr.length / 2);
 
   if (arr.length === 1) {
