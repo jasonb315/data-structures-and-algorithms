@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = exports = {}
+module.exports = exports = {};
 
 exports.BinarySearch = (array, keyVal) => {
   for(var i = 0 ; i < array.length ; i++){
