@@ -2,7 +2,7 @@
 
 module.exports = exports = {}
 
-exports.BinarySearch(array, keyVal){
+exports.BinarySearch = (array, keyVal) => {
   for(var i = 0 ; i < array.length ; i++){
     if ( array[i] === keyVal ){
       return i;
@@ -10,4 +10,4 @@ exports.BinarySearch(array, keyVal){
     return -1;
   }
 
-}
+};
