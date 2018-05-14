@@ -1,19 +1,11 @@
 'use strict';
 
-
-//a should be a sorted array
-//b should be a search key
-
-function BinarySearch(a, b){
-  for(var i = 0 ; i < a.length ; i++){
-    if ( a[i] === b ){
+function BinarySearch(array, keyVal){
+  for(var i = 0 ; i < array.length ; i++){
+    if ( array[i] === keyVal ){
       return i;
-    } else {
-      // return -1;
     }
+    return -1;
   }
 
-
 }
-
-BinarySearch();

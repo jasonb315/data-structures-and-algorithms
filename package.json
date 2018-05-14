@@ -4,7 +4,7 @@
   "description": "data-structures-and-algorithms",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./__test__/lib/array_shift.test.js --verbose --coverage",
+    "test": "jest ./__test__/lib/array.binary.search.test.js --verbose --coverage",
     "lint": "eslint **/*.js"
   },
   "repository": {
