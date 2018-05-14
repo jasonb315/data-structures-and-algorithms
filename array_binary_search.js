@@ -7,7 +7,7 @@ exports.BinarySearch = (array, keyVal) => {
     if ( array[i] === keyVal ){
       return i;
     }
-    return -1;
   }
+  return -1;
 
 };
