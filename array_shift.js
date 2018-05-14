@@ -1,7 +1,7 @@
 const shift = function insertShift(arr, n){
-  newArr = [];
-  midPoint = Math.ceil(arr.length/2)
-  s = 0;
+  var newArr = [];
+  var midPoint = Math.ceil(arr.length/2);
+  var s = 0;
   for ( var i = 0 ; i < arr.length ; i++ ){
     if (s === midPoint){
       newArr[s] = n;
@@ -11,6 +11,6 @@ const shift = function insertShift(arr, n){
     s++;
   }//close for
   return newArr;
-}//close F
+};//close F
 
 module.exports = shift;
