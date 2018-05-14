@@ -16,10 +16,10 @@ exports.binarySearch = function(arr, val) {
     return val;
 
   } else if (val > arr[half]) {
-    return binarySearch(arr.createNewArray(half, arr.length), val);
+    return exports.binarySearch(arr.createNewArray(half, arr.length), val);
 
   } else {
-    return binarySearch(arr.createNewArray(0, half), val);
+    return exports.binarySearch(arr.createNewArray(0, half), val);
   }
 };
 
