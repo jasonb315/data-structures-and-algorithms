@@ -1,10 +1,10 @@
-function insertShift(arr, n){
+const shift = function insertShift(arr, n){
   newArr = [];
-  midPoint = math.ceil(arr.length/2)
+  midPoint = Math.ceil(arr.length/2)
   s = 0;
   for ( var i = 0 ; i < arr.length ; i++ ){
     if (s === midPoint){
-      new Arr[s] = n;
+      newArr[s] = n;
       s++;
     }//close if
     newArr[s] = arr[i];
@@ -12,3 +12,5 @@ function insertShift(arr, n){
   }//close for
   return newArr;
 }//close Fx
+
+module.exports = shift;

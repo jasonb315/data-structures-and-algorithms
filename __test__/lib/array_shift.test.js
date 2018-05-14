@@ -1,9 +1,9 @@
 'use strict';
 
-const arrayShift = require('../../lib/array_shift.js'); //
+const arrayShift = require('../../array_shift.js'); //
 const assert = require('assert'); 
 
-let thing = 0;
-
-results = arithmetic.add(1,1);
-assert.strictEqual(results, expected, '315:');
+it('insertShift() puts the value in the middle index', () => {
+  let testArray = arrayShift([1, 3, 2, 4], 7);
+  expect( testArray ).toEqual([1, 3, 7, 2, 4]);
+});
