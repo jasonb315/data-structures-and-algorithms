@@ -64,6 +64,7 @@ class LinkedList {
   removeByValue(offsetVal) {
 
     let currentNode = this.head;
+
     let previousNode = currentNode;
  
     if(currentNode.value === offsetVal){
@@ -74,7 +75,9 @@ class LinkedList {
     } else {
 
       while(currentNode.value !== offsetVal){
+
         previousNode = currentNode;
+
         currentNode = currentNode.next;
 
       }
@@ -224,19 +227,29 @@ class LinkedList {
   // }
 
   reverse() {
+
     var currentNode = this.head;
+
     var next = null;
+
     var prev = null;
     
     while(currentNode) {
+
       next = currentNode.next;
+
       currentNode.next = prev;
+
       prev = currentNode;
+
       currentNode = next;
+
     }
+
     this.head = prev;
 
     return this;
+    
   }
 
 }//Fx LinkedList
