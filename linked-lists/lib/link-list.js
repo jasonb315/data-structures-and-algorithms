@@ -5,57 +5,102 @@ const Node = require('./node.js');
 class LinkedList {
 
   constructor() {
-    this.head = null;
+
     this.length = 0;
+
+    this.head = null;
+
   }
 
+  //NODE REFRENCE
+
+  // class Node {
+  //   constructor(value) {
+  //     this.value = value;
+  //     this.next = null;
+  //   }
+  // }
+
   append(value) {
+    
     let node = new Node(value);
 
     // This happens if the list is empty
     if (!this.head) {
+
       this.head = node;
-      this.length = 1;
-      return this;
+      // return this;
+
+    } else {
+
+      let currentNode = this.head;
+
+      while (currentNode.next) {
+        
+        currentNode = currentNode.next;
+
+      }
+      currentNode.next = node;
     }
 
-    // If we have stuff, need add to end
-    let currentNode = this.head;
-    while (currentNode.next) {
-
-      currentNode = currentNode.next;
-    }
-    currentNode.next = node;
     this.length++;
-    return this;
-  }
+    // return this;
+
+  }//Fx append
 
   prepend(value) {
+
     let newNode = new Node(value);
+
     newNode.next = this.head;
+
     this.head = newNode;
+
     this.length++;
-    return this;
-  }
+
+    // return this;
+
+  }//Fx prepend
 
   remove(offset) {
+
     let currentNode = this.head;
-    let prevNode = currentNode;
+    let previousNode = currentNode;
  
-    for (var i = 0; i < this.length; i++) {
-      if (offset == i) {
-        let tempNode = currentNode.next;
-        currentNode = undefined;
-        prevNode.next = tempNode;
-        this.length--;
-        break;
+    if(currentNode.value === offset){
+
+      this.head = currentNode.next;
+
+    } else {
+
+      while(currentNode.value !== offset){
+        previousNode = currentNode;
+        currentNode = currentNode.next;
+
       }
-      prevNode = currentNode;
-      currentNode = currentNode.next;
+
+      previousNode.next = currentNode.next;
+
     }
+
+    this.length--;
+
+  }//F remove
+
+  //   for (var i = 0; i < this.length; i++) {
+  //     if (offset == i) {
+  //       let tempNode = currentNode.next;
+  //       currentNode = undefined;
+  //       prevNode.next = tempNode;
+  //       this.length--;
+  //       break;
+  //     }
+  //     prevNode = currentNode;
+  //     currentNode = currentNode.next;
+  //   }
  
-    return this;
-  }
+  //   return this;
+  // }
 
   reverse() {
     var currentNode = this.head;
@@ -73,7 +118,7 @@ class LinkedList {
     return this;
   }
 
-}
+}//Fx LinkedList
 
 module.exports = LinkedList;
 
