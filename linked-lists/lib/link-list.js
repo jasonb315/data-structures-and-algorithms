@@ -124,6 +124,7 @@ class LinkedList {
     }
 
     this.length--;
+
     return currentNode.value;
 
   }//Fx removeByIndex
@@ -244,7 +245,9 @@ module.exports = LinkedList;
 
 
 // Feature Tasks
-// implement a Singly Linked List (SLL) data structure
-// implement append(value), prepend(value), reverse(), and remove(offset) methods to the SLL class
+// ximplement a Singly Linked List (SLL) data structure
+// implement xappend(value), xprepend(value), reverse(), and xxremove(offset) methods to the SLL class
+
 // implement serialize() and deserialize() methods on the class
+
 // in a comment within each function, note the it's Big-O runtime
