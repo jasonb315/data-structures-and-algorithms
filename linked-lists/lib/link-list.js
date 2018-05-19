@@ -96,6 +96,13 @@ class LinkedList {
 
     var currentIndex = 0;
 
+    if(index < 0 || index >= this.length){
+
+      console.log('requested index is out of bounds');
+      return null;
+
+    }
+
     if (index === 0){
 
       this.head = currentNode.next;
@@ -103,19 +110,21 @@ class LinkedList {
     } else {
 
       while(currentIndex < index){
+
         currentIndex++;
+
         previousNode = currentNode;
+
         currentNode = currentNode.next;
+
       }
+
       previousNode.next = currentNode.next;
 
     }
+
     this.length--;
     return currentNode.value;
-
-//TODO^^^^^^^^^
-
-
 
   }//Fx removeByIndex
 
