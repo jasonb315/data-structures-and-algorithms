@@ -28,13 +28,13 @@ ll.append('4');
 
 // ll.insertNode('a', 0);
 
-ll.insertNodeAfter(1, 'b');
+// ll.insertNodeAfter(1, 'b');
 
 // ll.insertNode('c', 2);
 
 ll.logList();
 
-
+ll.findK(ll, 2);
 
 
 // append(value) works
