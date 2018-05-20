@@ -15,6 +15,12 @@ ll.append('3');
 
 ll.append('4');
 
+ll.append('5');
+
+ll.append('6');
+
+ll.append('7');
+
 
 // ll.logList();
 
