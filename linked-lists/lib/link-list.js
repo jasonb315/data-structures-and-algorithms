@@ -13,7 +13,7 @@ class LinkedList {
   }
 
   append(value) {
-    
+    // big O(n)
     let node = new Node(value);
 
     if (!this.head) {
@@ -39,7 +39,7 @@ class LinkedList {
   }//Fx append
 
   prepend(value) {
-
+  // big O(1)
     let newNode = new Node(value);
 
     newNode.next = this.head;
@@ -53,7 +53,7 @@ class LinkedList {
   }//Fx prepend
 
   removeByValue(offsetVal) {
-
+  // big O(n)
     let currentNode = this.head;
 
     let previousNode = currentNode;
@@ -83,7 +83,7 @@ class LinkedList {
   }//F removeByVal
 
   removeByIndex(index){
-
+  // big O(n)
     var currentNode = this.head;
 
     var previousNode;
@@ -124,7 +124,7 @@ class LinkedList {
   }//Fx removeByIndex
 
   findIndex(searchVal){
-    //search input by value key
+    // big O(n)
 
     var currentNode = this.head;
 
@@ -149,6 +149,7 @@ class LinkedList {
   }//Fx findIndex
 
   insertNode(index, value){
+    // big O(n)
 
     let node = new Node(value);
 
@@ -189,9 +190,11 @@ class LinkedList {
       node.next = currentNode;
 
     }
+    this.length++;
   }//Fx insertNode
   
   reverse() {
+    // big O(n)
 
     var currentNode = this.head;
 
@@ -218,7 +221,7 @@ class LinkedList {
   }
 
   logList(){
-
+    // big O(n)
     var currentNode = this.head;
 
     console.log('---');
@@ -239,7 +242,6 @@ class LinkedList {
 
 module.exports = LinkedList;
 
-// implement xappend(value), xprepend(value), xreverse(), and xxremove(offset) methods to the SLL class
 
 // implement [ ] serialize() and [ ] deserialize() methods on the class
 

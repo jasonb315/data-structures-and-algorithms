@@ -18,9 +18,13 @@ ll.append('4');
 
 // ll.logList();
 
+console.log(ll.length);
+
 ll.insertNode(1, 'D');
 
 ll.logList();
+
+console.log(ll.length);
 
 // ll.logList();
 
@@ -40,6 +44,6 @@ ll.logList();
 // removeByValue(offsetVal) works
 // removeByIndex(index) works
 // findIndex(searchVal) works
-// insertNode(index, value) TODO
+// insertNode(index, value) works
 // reverse() works
 // logList() works
