@@ -70,6 +70,26 @@ describe('Linked List', () => {
     list.removeByIndex(3);
     expect(list.length).toEqual(3);
   });
+
+  it('remove at index', () => {
+    let list = new LL();
+ 
+    list.append('First One');
+    list.append('Something Else');
+    list.append('Another One');
+    list.removeByValue('Another One');
+ 
+    expect(list.length).toEqual(2);
+ 
+    list.append('Another One');
+    list.removeByValue('Another One');
+    expect(list.length).toEqual(2);
+ 
+    list.prepend('New Head');
+    list.append('Another One');
+    list.removeByValue(3);
+    expect(list.length).toEqual(3);
+  });
   
 
 });
