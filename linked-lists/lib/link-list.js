@@ -200,6 +200,53 @@ class LinkedList {
     }
     this.length++;
   }//Fx insertNode
+
+  
+  insertNodeAfter(index, value){
+    // big O(n)
+
+    let node = new Node(value);
+
+    let currentNode = this.head;
+
+    let currentIndex = 0;
+
+    let wubbalubbadubdub;
+
+    if(index > this.length){
+
+      console.log('Index argument passed is larger than list length.');
+
+      return false;
+
+    }//works
+
+    if(index === 0){
+
+      node.next = currentNode;
+
+      this.head = node;
+
+    } //works
+
+    else {
+
+
+      while(currentIndex <= index){
+
+        currentIndex++;
+        wubbalubbadubdub = currentNode;
+        currentNode = currentNode.next;
+
+      }
+
+      wubbalubbadubdub.next = node;
+      node.next = currentNode;
+
+    }
+    this.length++;
+  }//Fx insertNode
+
   
   reverse() {
     // big O(n)
