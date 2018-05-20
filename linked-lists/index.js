@@ -18,13 +18,11 @@ ll.append('4');
 
 // ll.logList();
 
-console.log(ll.length);
+console.log(ll);
 
-ll.insertNode(1, 'D');
+var dbSim = ll.serialize(ll);
 
-ll.logList();
-
-console.log(ll.length);
+ll.deserialize(dbSim);
 
 // ll.logList();
 

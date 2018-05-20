@@ -14,6 +14,7 @@ class LinkedList {
 
   append(value) {
     // big O(n)
+
     let node = new Node(value);
 
     if (!this.head) {
@@ -39,7 +40,8 @@ class LinkedList {
   }//Fx append
 
   prepend(value) {
-  // big O(1)
+    // big O(1)
+
     let newNode = new Node(value);
 
     newNode.next = this.head;
@@ -53,7 +55,8 @@ class LinkedList {
   }//Fx prepend
 
   removeByValue(offsetVal) {
-  // big O(n)
+    // big O(n)
+
     let currentNode = this.head;
 
     let previousNode = currentNode;
@@ -83,7 +86,8 @@ class LinkedList {
   }//F removeByVal
 
   removeByIndex(index){
-  // big O(n)
+    // big O(n)
+
     var currentNode = this.head;
 
     var previousNode;
@@ -222,6 +226,7 @@ class LinkedList {
 
   logList(){
     // big O(n)
+
     var currentNode = this.head;
 
     console.log('---');
@@ -238,11 +243,28 @@ class LinkedList {
     console.log('---');
   }
 
+
+  serialize(obj){
+
+    var serialized = JSON.stringify(obj);
+
+    console.log(serialized);
+
+    return serialized;
+
+  }
+
+
+  deserialize(jsonObj){
+    
+    var deserialized = JSON.parse(jsonObj);
+
+    console.log(deserialized);
+
+    return deserialized;
+  }
+
+
 }//Fx LinkedList
 
 module.exports = LinkedList;
-
-
-// implement [ ] serialize() and [ ] deserialize() methods on the class
-
-// in a comment within each function, note the it's Big-O runtime
