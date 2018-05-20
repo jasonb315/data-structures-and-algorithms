@@ -177,6 +177,7 @@ class LinkedList {
     if(index > this.length){
 
       console.log('Index argument passed is larger than list length.');
+
       return false;
 
     }
@@ -188,43 +189,29 @@ class LinkedList {
 
       this.head = node;
 
-    } else {
+    } else if (index > 0){
 
       while(currentIndex < index){
 
         currentIndex++;
 
-        previousNode = currentNode;//c becomes p in next line
+        previousNode = currentNode;
+        console.log('x' + previousNode);
 
-        currentNode = currentNode.next;//move down line until current node === index
+        // currentNode = currentNode.next;
+        //move down line until current node === index
 
       }
 
       node.next = currentNode;
-
-      previousNode.next = node;
+      // console.log(previousNode);
+      previousNode.next = node;//cannot read, previous node undefined?
 
     }
+
     this.length++;
+
   }//Fx insertNode
-
-
-
-
-  //   for (var i = 0; i < this.length; i++) {
-  //     if (offset == i) {
-  //       let tempNode = currentNode.next;
-  //       currentNode = undefined;
-  //       prevNode.next = tempNode;
-  //       this.length--;
-  //       break;
-  //     }
-  //     prevNode = currentNode;
-  //     currentNode = currentNode.next;
-  //   }
- 
-  //   return this;
-  // }
 
   reverse() {
 
@@ -248,19 +235,34 @@ class LinkedList {
 
     this.head = prev;
 
-    return this;
-    
+    // return this;
+
+  }
+
+  logList(){
+
+    var currentNode = this.head;
+
+    console.log('< ');
+
+    while (currentNode){
+
+      console.log(currentNode.value);
+
+      if (!currentNode.next){
+        break;
+      }
+      currentNode = currentNode.next;
+    }
+    console.log(' >');
   }
 
 }//Fx LinkedList
 
 module.exports = LinkedList;
 
+// implement xappend(value), xprepend(value), xreverse(), and xxremove(offset) methods to the SLL class
 
-// Feature Tasks
-// ximplement a Singly Linked List (SLL) data structure
-// implement xappend(value), xprepend(value), reverse(), and xxremove(offset) methods to the SLL class
-
-// implement serialize() and deserialize() methods on the class
+// implement [ ] serialize() and [ ] deserialize() methods on the class
 
 // in a comment within each function, note the it's Big-O runtime

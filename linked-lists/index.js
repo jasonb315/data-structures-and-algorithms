@@ -5,33 +5,38 @@ const linkedList = require('./lib/link-list.js');
 
 let ll = new linkedList();
 
-ll.append('OVI');
-console.log(ll);
-console.log(ll.length);
-ll.append('JASON');
-console.log(ll);
-console.log(ll.length);
-ll.append('DEMI1');
-console.log(ll);
-console.log(ll.length);
-ll.append('DEMI2');
-console.log(ll);
-console.log(ll.length);
-ll.append('DEMI3');
-console.log(ll);
-console.log(ll.length);
-ll.append('DEMI3');
-console.log(ll);
-console.log(ll.length);
+ll.append('jason');
 
-console.log('---');
+ll.append('harneet');
 
-ll.append('DEMI3');
-console.log(ll);
-console.log(ll.length);
+ll.append('baby');
 
-console.log('---');
 
-ll.remove('DEMI2');
-console.log(ll);
-console.log(ll.length);
+ll.logList();
+
+ll.reverse();
+
+ll.logList();
+
+
+ll.insertNode('a', 0);
+
+ll.insertNode('b', 1);
+
+ll.insertNode('c', 2);
+
+
+ll.logList();
+
+
+
+
+
+// append(value)
+// prepend(value)
+// removeByValue(offsetVal)
+// removeByIndex(index)
+// findIndex(searchVal)
+// insertNode(index, value)
+// reverse()
+// logList()
