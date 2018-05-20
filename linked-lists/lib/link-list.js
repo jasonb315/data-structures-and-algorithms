@@ -12,15 +12,6 @@ class LinkedList {
 
   }
 
-  //NODE.JS REFRENCE
-
-  // class Node {
-  //   constructor(value) {
-  //     this.value = value;
-  //     this.next = null;
-  //   }
-  // }
-
   append(value) {
     
     let node = new Node(value);
@@ -132,14 +123,6 @@ class LinkedList {
 
   }//Fx removeByIndex
 
-  lengthOf(){
-
-    console.log(`this.length: ${this.length}`);
-
-    return this.length;
-
-  }//Fx lengthOf
-
   findIndex(searchVal){
     //search input by value key
 
@@ -152,6 +135,7 @@ class LinkedList {
       index++;
 
       if(currentNode.value === searchVal){
+        console.log(`${searchVal} found at index ${index}`);
         return index;
       }
 
@@ -168,11 +152,9 @@ class LinkedList {
 
     let node = new Node(value);
 
-    var currentNode = this.head;
+    let currentNode = this.head;
 
-    var previousNode;
-
-    var currentIndex = 0;
+    let currentIndex = 0;
 
     if(index > this.length){
 
@@ -180,36 +162,61 @@ class LinkedList {
 
       return false;
 
-    }
+    }//works
 
     if(index === 0){
-      //user is inserting node as new HEAD
 
       node.next = currentNode;
 
       this.head = node;
 
-    } else if (index > 0){
+    } //works
+
+    else {
+
 
       while(currentIndex < index){
 
         currentIndex++;
+        currentNode = currentNode.next;
 
-        previousNode = currentNode;
-        console.log('x' + previousNode);
+        console.log(currentIndex);
+        console.log(currentNode);
 
-        // currentNode = currentNode.next;
-        //move down line until current node === index
+        
 
       }
 
-      node.next = currentNode;
-      // console.log(previousNode);
-      previousNode.next = node;//cannot read, previous node undefined?
+      
 
-    }
+    //     previousNode = currentNode;
+    //     currentIndex++;
+    //     currentNode = currentNode.next;
+    //     // console.log(currentNode);
+    //     console.log(previousNode);
+    //   }
+    // }
+    //   while(currentIndex < index){
 
-    this.length++;
+        
+    //     previousNode = currentNode;
+    //     // console.log('x' + previousNode);
+    //     currentIndex++;
+        
+    //     currentNode = currentNode.next;
+    //     //move down line until current node === index
+    //   }
+      
+    //   node.next = currentNode;
+    //   // console.log(previousNode);
+    //   previousNode.next = node;//cannot read, previous node undefined?
+
+    // }
+
+    // this.length++;
+    // return this;
+
+    }//close else
 
   }//Fx insertNode
 
@@ -243,7 +250,7 @@ class LinkedList {
 
     var currentNode = this.head;
 
-    console.log('< ');
+    console.log('---');
 
     while (currentNode){
 
@@ -254,7 +261,7 @@ class LinkedList {
       }
       currentNode = currentNode.next;
     }
-    console.log(' >');
+    console.log('---');
   }
 
 }//Fx LinkedList
