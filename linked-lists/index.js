@@ -16,9 +16,9 @@ ll.append('3');
 ll.append('4');
 
 
-ll.logList();
+// ll.logList();
 
-ll.insertNode(3, 'D');
+ll.insertNode(1, 'D');
 
 ll.logList();
 

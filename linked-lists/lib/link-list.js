@@ -156,6 +156,8 @@ class LinkedList {
 
     let currentIndex = 0;
 
+    let wubbalubbadubdub;
+
     if(index > this.length){
 
       console.log('Index argument passed is larger than list length.');
@@ -178,48 +180,17 @@ class LinkedList {
       while(currentIndex < index){
 
         currentIndex++;
+        wubbalubbadubdub = currentNode;
         currentNode = currentNode.next;
-
-        console.log(currentIndex);
-        console.log(currentNode);
-
-        
 
       }
 
-      
+      wubbalubbadubdub.next = node;
+      node.next = currentNode;
 
-    //     previousNode = currentNode;
-    //     currentIndex++;
-    //     currentNode = currentNode.next;
-    //     // console.log(currentNode);
-    //     console.log(previousNode);
-    //   }
-    // }
-    //   while(currentIndex < index){
-
-        
-    //     previousNode = currentNode;
-    //     // console.log('x' + previousNode);
-    //     currentIndex++;
-        
-    //     currentNode = currentNode.next;
-    //     //move down line until current node === index
-    //   }
-      
-    //   node.next = currentNode;
-    //   // console.log(previousNode);
-    //   previousNode.next = node;//cannot read, previous node undefined?
-
-    // }
-
-    // this.length++;
-    // return this;
-
-    }//close else
-
+    }
   }//Fx insertNode
-
+  
   reverse() {
 
     var currentNode = this.head;
