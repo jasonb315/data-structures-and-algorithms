@@ -15,6 +15,10 @@ class LinkedList {
   append(value) {
     // big O(n)
 
+    // if (value === null){
+
+    // }
+
     let node = new Node(value);
 
     if (!this.head) {
@@ -228,11 +232,12 @@ class LinkedList {
     // big O(n)
 
     var currentNode = this.head;
-
-    console.log('---');
+    var list = [];
+    // console.log('---');
 
     while (currentNode){
 
+      list.push(currentNode.value);
       console.log(currentNode.value);
 
       if (!currentNode.next){
@@ -240,29 +245,41 @@ class LinkedList {
       }
       currentNode = currentNode.next;
     }
-    console.log('---');
+    // console.log('---');
+    return list;
   }
 
-
-  serialize(obj){
-
-    var serialized = JSON.stringify(obj);
-
-    console.log(serialized);
-
+  serialize() {
+    var serialized = JSON.stringify(this);
+    //server stuff - DB
     return serialized;
-
   }
-
-
-  deserialize(jsonObj){
-    
-    var deserialized = JSON.parse(jsonObj);
-
-    console.log(deserialized);
-
+ 
+  deserialize() {
+    var deserialized = JSON.parse(JSON.stringify(this));
+    // DB - server stuff
     return deserialized;
   }
+
+  // serialize(obj){
+
+  //   var serialized = JSON.stringify(obj);
+
+  //   console.log(serialized);
+
+  //   return serialized;
+
+  // }
+
+
+  // deserialize(jsonObj){
+
+  //   var deserialized = JSON.parse(jsonObj);
+
+  //   console.log(deserialized);
+
+  //   return deserialized;
+  // }
 
 
 }//Fx LinkedList
