@@ -18,21 +18,21 @@ ll.append('4');
 
 // ll.logList();
 
-console.log(ll);
+// console.log(ll);
 
-var dbSim = ll.serialize(ll);
+// var dbSim = ll.serialize(ll);
 
-ll.deserialize(dbSim);
+// ll.deserialize(dbSim);
 
 // ll.logList();
 
 // ll.insertNode('a', 0);
 
-// ll.insertNode('b', 1);
+ll.insertNodeAfter(1, 'b');
 
 // ll.insertNode('c', 2);
 
-// console.log(ll.head.next.next.value);
+ll.logList();
 
 
 
