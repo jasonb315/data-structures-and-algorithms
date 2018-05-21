@@ -12,17 +12,13 @@ class LinkedList {
 
   }
 
-  //NODE.JS REFRENCE
-
-  // class Node {
-  //   constructor(value) {
-  //     this.value = value;
-  //     this.next = null;
-  //   }
-  // }
-
   append(value) {
-    
+    // big O(n)
+
+    // if (value === null){
+
+    // }
+
     let node = new Node(value);
 
     if (!this.head) {
@@ -48,6 +44,7 @@ class LinkedList {
   }//Fx append
 
   prepend(value) {
+    // big O(1)
 
     let newNode = new Node(value);
 
@@ -62,6 +59,7 @@ class LinkedList {
   }//Fx prepend
 
   removeByValue(offsetVal) {
+    // big O(n)
 
     let currentNode = this.head;
 
@@ -92,6 +90,7 @@ class LinkedList {
   }//F removeByVal
 
   removeByIndex(index){
+    // big O(n)
 
     var currentNode = this.head;
 
@@ -132,16 +131,8 @@ class LinkedList {
 
   }//Fx removeByIndex
 
-  lengthOf(){
-
-    console.log(`this.length: ${this.length}`);
-
-    return this.length;
-
-  }//Fx lengthOf
-
   findIndex(searchVal){
-    //search input by value key
+    // big O(n)
 
     var currentNode = this.head;
 
@@ -152,6 +143,7 @@ class LinkedList {
       index++;
 
       if(currentNode.value === searchVal){
+        console.log(`${searchVal} found at index ${index}`);
         return index;
       }
 
@@ -165,14 +157,15 @@ class LinkedList {
   }//Fx findIndex
 
   insertNode(index, value){
+    // big O(n)
 
     let node = new Node(value);
 
-    var currentNode = this.head;
+    let currentNode = this.head;
 
-    var previousNode;
+    let currentIndex = 0;
 
-    var currentIndex = 0;
+    let wubbalubbadubdub;
 
     if(index > this.length){
 
@@ -180,40 +173,36 @@ class LinkedList {
 
       return false;
 
-    }
+    }//works
 
     if(index === 0){
-      //user is inserting node as new HEAD
 
       node.next = currentNode;
 
       this.head = node;
 
-    } else if (index > 0){
+    } //works
+
+    else {
+
 
       while(currentIndex < index){
 
         currentIndex++;
-
-        previousNode = currentNode;
-        console.log('x' + previousNode);
-
-        // currentNode = currentNode.next;
-        //move down line until current node === index
+        wubbalubbadubdub = currentNode;
+        currentNode = currentNode.next;
 
       }
 
+      wubbalubbadubdub.next = node;
       node.next = currentNode;
-      // console.log(previousNode);
-      previousNode.next = node;//cannot read, previous node undefined?
 
     }
-
     this.length++;
-
   }//Fx insertNode
-
+  
   reverse() {
+    // big O(n)
 
     var currentNode = this.head;
 
@@ -240,13 +229,15 @@ class LinkedList {
   }
 
   logList(){
+    // big O(n)
 
     var currentNode = this.head;
-
-    console.log('< ');
+    var list = [];
+    // console.log('---');
 
     while (currentNode){
 
+      list.push(currentNode.value);
       console.log(currentNode.value);
 
       if (!currentNode.next){
@@ -254,15 +245,43 @@ class LinkedList {
       }
       currentNode = currentNode.next;
     }
-    console.log(' >');
+    // console.log('---');
+    return list;
   }
+
+  serialize() {
+    var serialized = JSON.stringify(this);
+    //server stuff - DB
+    return serialized;
+  }
+ 
+  deserialize() {
+    var deserialized = JSON.parse(JSON.stringify(this));
+    // DB - server stuff
+    return deserialized;
+  }
+
+  // serialize(obj){
+
+  //   var serialized = JSON.stringify(obj);
+
+  //   console.log(serialized);
+
+  //   return serialized;
+
+  // }
+
+
+  // deserialize(jsonObj){
+
+  //   var deserialized = JSON.parse(jsonObj);
+
+  //   console.log(deserialized);
+
+  //   return deserialized;
+  // }
+
 
 }//Fx LinkedList
 
 module.exports = LinkedList;
-
-// implement xappend(value), xprepend(value), xreverse(), and xxremove(offset) methods to the SLL class
-
-// implement [ ] serialize() and [ ] deserialize() methods on the class
-
-// in a comment within each function, note the it's Big-O runtime

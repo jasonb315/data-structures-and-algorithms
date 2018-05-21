@@ -4,8 +4,8 @@
   "description": "data-structures-and-algorithms",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose",
-    "watch": "jest --coverage --verbose --watchAll"
+    "test": "jest ./__test__/lib/link-list.test.js --coverage --verbose jest ./__test__/lib/node.js --coverage --verbose ",
+    "watch": "jest ./__test__/lib/link-list.test.js --coverage --verbose --watchAll jest ./__test__/lib/node.js --coverage --verbose --watchAll"
   },
   "repository": {
     "type": "git",
