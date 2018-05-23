@@ -12,56 +12,56 @@ exports.largestProduct = function (my2DArray) {
 
       var currentNum = my2DArray[i][j];
 
-      if (typeof my2DArray[i-1][j-1]!== 'undefined'){
+      if (typeof my2DArray[i-1][j-1]=== 'number'){
         var topLeft = my2DArray[i-1][j-1] * currentNum;
         if (topLeft > highestAdjNums) {
           highestAdjNums = topLeft;
         }
       }
 
-      if (typeof my2DArray[i-1][j]!== 'undefined'){
+      if (typeof my2DArray[i-1][j]=== 'number'){
         var topMid = my2DArray[i-1][j] * currentNum;
         if (topMid > highestAdjNums) {
           highestAdjNums = topMid;
         }
       }
 
-      if (typeof my2DArray[i-1][j+1]!== 'undefined'){
+      if (typeof my2DArray[i-1][j+1]=== 'number'){
         var topRight = my2DArray[i-1][j+1] * currentNum;
         if (topRight > highestAdjNums) {
           highestAdjNums = topRight;
         }
       }
 
-      if (typeof my2DArray[i][j-1]!== 'undefined'){
+      if (typeof my2DArray[i][j-1]=== 'number'){
         var midLeft = my2DArray[i][j-1] * currentNum;
         if (midLeft > highestAdjNums) {
           highestAdjNums = midLeft;
         }
       }
 
-      if (typeof my2DArray[i][j+1]!== 'undefined'){
+      if (typeof my2DArray[i][j+1]=== 'number'){
         var midRight = my2DArray[i][j+1] * currentNum;
         if (midRight > highestAdjNums) {
           highestAdjNums = midRight;
         }
       }
 
-      if (typeof my2DArray[i+1][j-1]!== 'undefined') {
+      if (typeof my2DArray[i+1][j-1]=== 'number') {
         var bottomLeft = my2DArray[i+1][j-1] * currentNum;
         if (bottomLeft > highestAdjNums) {
           highestAdjNums = bottomLeft;
         }
       }
 
-      if (typeof my2DArray[i+1][j]!== 'undefined'){
+      if (typeof my2DArray[i+1][j]=== 'number'){
         var bottomMid = my2DArray[i+1][j] * currentNum;
         if (bottomMid > highestAdjNums) {
           highestAdjNums = bottomMid;
         }
       }
 
-      if (typeof my2DArray[i+1][j+1]!== 'undefined'){
+      if (typeof my2DArray[i+1][j+1]=== 'number'){
         var bottomRight = my2DArray[i+1][j+1] * currentNum;
         if (bottomRight > highestAdjNums) {
           highestAdjNums = bottomRight;
