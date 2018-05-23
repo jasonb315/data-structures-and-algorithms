@@ -296,6 +296,52 @@ class LinkedList {
     return list;
   }
 
+  findK (ll, k){
+
+    var index = 0;
+
+    var currentNode = this.head;
+    
+    var countNode = this.head;
+
+    while (currentNode.next){
+
+      currentNode = currentNode.next;
+
+      index++;
+
+    }
+
+    if (k >= index) {
+
+      return null;
+
+    } else {
+
+      let target = index - k;
+
+      for ( let i = 0 ; i < target ; i++ ){
+
+
+        countNode = countNode.next;
+      }
+
+      console.log(`requested index: ${target} from end. value: ${countNode.value}`);
+
+      return countNode;
+
+    }
+
+
+  }
+
+
+
+
+
+
+
+
   serialize() {
     var serialized = JSON.stringify(this);
     //server stuff - DB
