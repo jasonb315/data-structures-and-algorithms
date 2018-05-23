@@ -12,6 +12,13 @@ exports.largestProduct = function (my2DArray) {
 
       var currentNum = my2DArray[i][j];
 
+      if (typeof my2DArray[i+1][j+1]=== 'number'){
+        var bottomRight = my2DArray[i+1][j+1] * currentNum;
+        if (bottomRight > highestAdjNums) {
+          highestAdjNums = bottomRight;
+        }
+      }
+
       if (typeof my2DArray[i-1][j-1]=== 'number'){
         var topLeft = my2DArray[i-1][j-1] * currentNum;
         if (topLeft > highestAdjNums) {
@@ -58,13 +65,6 @@ exports.largestProduct = function (my2DArray) {
         var bottomMid = my2DArray[i+1][j] * currentNum;
         if (bottomMid > highestAdjNums) {
           highestAdjNums = bottomMid;
-        }
-      }
-
-      if (typeof my2DArray[i+1][j+1]=== 'number'){
-        var bottomRight = my2DArray[i+1][j+1] * currentNum;
-        if (bottomRight > highestAdjNums) {
-          highestAdjNums = bottomRight;
         }
       }
     }
