@@ -14,6 +14,7 @@ tree.append(58);
 tree.append(69);
 tree.append(68);
 
+
 let highScore = tree.root.value;
 
 function findMaximumValueBinaryTree(tree){
