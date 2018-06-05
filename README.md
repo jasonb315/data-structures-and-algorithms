@@ -18,10 +18,11 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ##White Board
 
-<img src="./assets/reverseArray.jpg" style="width: 350px;">
+<!-- <img src="./assets/reverseArray.jpg" style="width: 350px;"> -->
+![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/reverseArray.jpg)
 
 ##Notes:
 1.
 2.
 
-[:top:](#contents)
+[:top:](#contents) TOP
