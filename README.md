@@ -11,17 +11,17 @@
 
 
 <a id="array_reverse"></a>
-##array_reverse
+## array_reverse
 
 #### Challenge
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return the provided array argument with elements in reversed order.
 
-##White Board
+## White Board
 
 <!-- <img src="./assets/reverseArray.jpg" style="width: 350px;"> -->
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/reverseArray.jpg)
 
-##Notes:
+## Notes:
 1.
 2.
 
