@@ -1,6 +1,6 @@
 'use strict';
 
-const Node = require('./node.js');
+const Node = require('./nodebinary.js');
 
 class BinaryTree {
   constructor() {
@@ -22,32 +22,33 @@ class BinaryTree {
       return this;
     }
 
-    let _walk = (value) => {
-      let currentNode = this.root;
+    let _walk = (value, node) => {
 
-      if(currentNode.value === value){
-        return currentNode.value;
+      if(node.value === value){
+        return node.value;
       }
 
-      if(value < currentNode.value){
-        if(currentNode.left === null){
-          currentNode.left = new Node(value);
+      if(value < node.value){
+        if(node.left === null){
+          node.left = new Node(value);
           this.nodeCount++;
           return this;
-        }else if(currentNode.left !== null)
-          return this.looptiverse(value, currentNode.left);
+        }else if(node.left !== null){
+          _walk(value, node.left);
+        }
       }
-      if(value > currentNode.value){
-        if(currentNode.right === null){
-          currentNode.right = new Node(value);
+      if(value > node.value){
+        if(node.right === null){
+          node.right = new Node(value);
           this.nodeCount++;
           return this;
-        }else if(currentNode.right !== null)
-          return this.looptiverse(value, currentNode.right);
+        }else if(node.right !== null){
+          _walk(value, node.right);        }
       }
 
     };
-    _walk(value);
+    console.log(this.root);
+    _walk(value, this.root);
 
     // this.looptiverse(value, this.root);
 
