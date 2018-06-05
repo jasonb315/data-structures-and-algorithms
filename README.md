@@ -32,7 +32,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/reverseArray.jpg)
 
-[:top:](#contents) TOP
+[:top:]TOP(#contents)
 
 
 <a id="array_shift"></a>
@@ -45,7 +45,7 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/arrayShift.jpg)
 
-[:top:](#contents) TOP
+[:top:]TOP(#contents)
 
 
 <a id="array_binary_search"></a>
@@ -58,7 +58,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/ArrayBinarySearch.jpg)
 
-[:top:](#contents) TOP
+[:top:]TOP(#contents)
 
 <a id="array_adjacent_product"></a>
 ## array_adjacent_product
@@ -72,4 +72,4 @@ Adjacent values might be horizontally, vertically, or diagonally connected.
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/largestProduct1.jpg)
 
-[:top:](#contents) TOP
+[:top:]TOP(#contents)
