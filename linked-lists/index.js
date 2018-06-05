@@ -24,7 +24,7 @@ ll.append('7');
 
 // ll.logList();
 
-// console.log(ll);
+console.log(ll);
 
 // var dbSim = ll.serialize(ll);
 
