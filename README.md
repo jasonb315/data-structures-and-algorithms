@@ -23,7 +23,7 @@
   * [14. towers-of-hanoi](#towers-of-hanoi)
   * [15. get_max](#get_max)
   * [16. fizz_buzz_tree](#fizz_buzz_tree)
-  * [17. breadth_tirst_traversal](#breadth_tirst_traversal)
+  * [17. breadth_first_traversal](#breadth_first_traversal)
   * [18. find-maximum-value](#find-maximum-value)
   * [19. estimates_of_population](#estimates_of_population)
 
@@ -279,8 +279,8 @@ Without utilizing any of the built-in methods available to your language, determ
 
 [:top: TOP](#contents)
 
-<a id="breadth_tirst_traversal"></a>
-## 17. breadth_tirst_traversal
+<a id="breadth_first_traversal"></a>
+## 17. breadth_first_traversal
 
 #### Challenge
 Write a function called breadthFirstTraversal which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
@@ -306,7 +306,7 @@ Write a function called find-maximum-value which takes binary tree as its only i
 
 
 <a id="estimates_of_population"></a>
-## X. estimates_of_population
+## 19. estimates_of_population
 
 #### Challenge
 You are working on a team producing estimates of population for some creature, given a complex set of inputs.
