@@ -17,9 +17,11 @@
   * [8 ll_merge](#ll_merge)
   * [9 ll_detect_loop](#ll_detect_loop)
   * [10 detect_palendrome](#detect_palendrome)
-  * [11 array_reverse](#array_reverse)
-  * [12 array_reverse](#array_reverse)
-  * [13 array_reverse](#array_reverse)
+  * [11 queue_with_stacks](#queue_with_stacks)
+  * [12 fifo_animal_shelter](#fifo_animal_shelter)
+  * [13 multi-bracket-validation](#multi-bracket-validation)
+
+  <!-- * [XX NAME](#NAME) -->
 
 
 
@@ -74,7 +76,7 @@ Adjacent values might be horizontally, vertically, or diagonally connected.
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/largestProduct1.jpg)
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/largestProduct2.jpg)
 
-[:top: TOP](#contents) TOP
+[:top: TOP](#contents)
 
 <a id="matrix_rotation"></a>
 ## 5. matrix_rotation
@@ -88,7 +90,7 @@ Don’t let the candidate get scared by the term “matrix”… It’s just an 
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/largestProduct1.jpg)
 
-[:top: TOP](#contents) TOP
+[:top: TOP](#contents)
 
 <a id="ll_insertions"></a>
 ## 6. ll_insertions
@@ -102,7 +104,7 @@ Don’t let the candidate get scared by the term “matrix”… It’s just an 
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/ll_insertions.jpg)
 
-[:top: TOP](#contents) TOP
+[:top: TOP](#contents)
 
 <a id="ll_kth_from_end"></a>
 ## 7. ll_kth_from_end
@@ -114,7 +116,7 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/llKthFromEnd.jpg)
 
-[:top: TOP](#contents) TOP
+[:top: TOP](#contents)
 
 
 <a id="ll_merge"></a>
@@ -127,7 +129,7 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/ll_merge.jpg)
 
-[:top: TOP](#contents) TOP
+[:top: TOP](#contents)
 
 
 <a id="ll_detect_loop"></a>
@@ -141,7 +143,7 @@ Note: Length or Size are *not* included in standard properties for a LL.
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/ll_detect_loop.jpg)
 
-[:top: TOP](#contents) TOP
+[:top: TOP](#contents)
 
 
 <a id="detect_palendrome"></a>
@@ -161,7 +163,59 @@ Reversing the Linked List, and checking for equality of the reversed part.
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/detectPalendrome.jpg)
 
-[:top: TOP](#contents) TOP
+[:top: TOP](#contents)
+
+
+<a id="queue_with_stacks"></a>
+## 11. queue_with_stacks.
+
+#### Challenge
+Implement the following methods for the Queue class:
+
+enqueue(value) which inserts value into the Queue using a first-in, first-out approach.
+dequeue() which extracts a value from the Queue using a first-in, first-out approach.
+You have access to 2 Stack instances with push and pop methods.
+
+#### White Board
+
+![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/queue_with_stacks2.jpg)
+
+[:top: TOP](#contents)
+
+<a id="fifo_animal_shelter"></a>
+## 12. fifo_animal_shelter.
+
+#### Challenge
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref, a string, is ‘cat’ return the longest-waiting cat. If pref is ‘dog’, return the longest-waiting dog. For anything else, return either a cat or a dog.
+
+#### White Board
+
+![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/fifo_animal_shelter.jpg)
+
+[:top: TOP](#contents)
+
+
+
+<a id="multi-bracket-validation"></a>
+## 13. multi-bracket-validation.
+
+#### Challenge
+On your main file, create…
+JavaScript: a function called multiBracketValidation(input)
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+#### White Board
+
+![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/multi-bracket-validation.jpg)
+
+[:top: TOP](#contents)
 <!--
 <a id="NAME"></a>
 ## X. NAME.
@@ -173,5 +227,5 @@ Reversing the Linked List, and checking for equality of the reversed part.
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/NAME.jpg)
 
-[:top: TOP](#contents) TOP
+[:top: TOP](#contents)
 -->
