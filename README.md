@@ -322,6 +322,7 @@ Write an algorithm that will return this data as quickly as possible.
 
 [:top: TOP](#contents)
 
+code produced collaboratively with classmates, in solo study, and following along with teacher/demo code.
 <!--
 <a id="NAME"></a>
 ## X. NAME
