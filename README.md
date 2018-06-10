@@ -1,7 +1,7 @@
 <a id="contents"></a>
 # Data Structures and Algorithms
 
-[Build status]
+[![Build Status](https://travis-ci.com/jasonb315/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/jasonb315/data-structures-and-algorithms)
 
 *Jason Burns, Code Fellows seattle401d24*
 
