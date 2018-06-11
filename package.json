@@ -4,9 +4,9 @@
   "description": "data-structures-and-algorithms",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./__test__/lib/array_binary_search.test.js --verbose --coverage jest ./__test__/lib/array_shift.test.js --verbose --coverage jest ./__test__/lib/array_binary_search.test.js --verbose --coverage jest",
+    "test": "jest ./DIR.js --verbose --coverage",
     "lint": "eslint **/*.js",
-    "test-watch": "jest ./__test__/lib/trees/challenge-03/btree-max-value.test.js --watchAll --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
     "watch": "nodemon index.js"
   },
   "repository": {
