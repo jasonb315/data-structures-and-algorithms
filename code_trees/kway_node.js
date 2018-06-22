@@ -10,3 +10,5 @@ class KWayNode {
   
     }
 }
+
+module.exports = KWayNode;
