@@ -28,34 +28,48 @@ const Node = require ('./kway_node.js');
             }
 
             else {
-                
+                // console.log('x' + stemFrom);
+                this.travelTo(stemFrom, genVal);//a currently
             }
 
         }
             
-        searchFor(node){
+        travelTo(targetVal){
 
-            let results = [];
+            // console.log('travelTo currentNode: ' + currentNode.children);//315 root node w/ children
 
             let _walk = (node) => {
 
-                for (i = 0 ; i <= node.children ; i++){
-                    _walk(this.node.children[i]);
+                for (let i = 0; i < node.children.length; i++) { 
+                    console.log(i, node.children[i]);
+                    if (node.children){_walk(node.children[i]); }
                 }
-                // if(node.left) _walk(node.left);
-                // if(node.right) _walk(node.right);
-                results.push(node.value);
-              };
+                if (node.value === targetVal){
+                    console.log('match found');
+                    
+                    console.log(node.children)
+                    node.children.push('asd');
+                    console.log(node.children)
+                }
+            }
+            
+            _walk(this.root);
 
-              _walk(this.root);
 
-              return results;
+          
+
+            //     //do something in end
+
+            //   };
+
+            // _walk(this.root);//ini call
+
+            //   return results;
 
 
         }
-
-
-
+        
+  
             // //if proGen not called, make reGen root.
             // if (currentNode === null){
             //     this.root = newNode;
