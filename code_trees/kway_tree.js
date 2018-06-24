@@ -49,65 +49,44 @@ const Node = require ('./kway_node.js');
 
         }
             
-        // travelTo(targetVal){
 
-        //     // console.log('travelTo currentNode: ' + currentNode.children);//315 root node w/ children
+        depthFirstTraversal(){
 
-        //     let _walk = (node) => {
-
-        //         for (let i = 0; i < node.children.length; i++) { 
-        //             console.log(i, node.children[i]);
-        //             if (node.children){_walk(node.children[i]); }
-        //         }
-        //         if (node.value === targetVal){
-        //             console.log('match found');
-                    
-        //             console.log(node.children)
-        //             node.children.push(new Node('x'));
-        //             node.children.push(new Node('y'));
-        //             console.log('node ' + node);
-        //             console.log(node.children);
-        //         }
-        //     }
+            let results = [];
+            results.push(this.root.value);
             
-        //     _walk(this.root);
+            let _walk = (node) => {
 
+                for (let i = 0; i < node.children.length; i++) { 
+                    results.push(node.children[i].value);
+                    _walk(node.children[i]);
+                }
 
-          
+            }
+            _walk(this.root);
+            console.log('results: ' + results);
+            return results;
 
-            //     //do something in end
+        }
 
-            //   };
+        breadthFirstTraversal(){
 
-            // _walk(this.root);//ini call
-
-            //   return results;
-
-
-        // }
-        
-  
-            // //if proGen not called, make reGen root.
-            // if (currentNode === null){
-            //     this.root = newNode;
-            // }//
-
-            // //move down tree to find specified stem to leaf.
-            // if(currentNode.value === stemFrom){
-
-            // }
+            let results = [];
+            results.push(this.root.value);
             
-            // this.children.push(node);
-            
-          
+            let _walk = (node) => {
 
-        // breadthFirstTraversal(){
-        //     if(!this.root){
-        //         return null;
-        //     }
-        //     return this.breadthFirstTraversalHelper(this.root);
+                for (let i = 0; i < node.children.length; i++) {
+                    _walk(node.children[i]);    
+                    results.push(node.children[i].value);
+                }
+                //QUE seems necesary.
+            }
+            _walk(this.root);
+            console.log('results: ' + results);
+            return results;
 
-        // }
+        }
 
         // breadthFirstTraversalHelper(){
         //     //const que = que

@@ -23,6 +23,9 @@ brain.reGen(315, 'c');
 brain.reGen('b', 100);
 brain.reGen(100, 'z');
 
+brain.depthFirstTraversal();
+brain.breadthFirstTraversal();
+
 // console.log(brain.root.children);
 
 

@@ -2,7 +2,7 @@
 
 class KWayNode {
 
-  constructor(value=bull){
+  constructor(value=null){
 
     this.value = value;
 
