@@ -21,6 +21,7 @@ brain.reGen(315, 'c');
 // console.log(brain.root.children);
 
 brain.reGen('b', 100);
+brain.reGen(100, 'z');
 
 // console.log(brain.root.children);
 

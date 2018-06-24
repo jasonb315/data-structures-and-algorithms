@@ -28,32 +28,49 @@ const Node = require ('./kway_node.js');
             }
 
             else {
-                // console.log('x' + stemFrom);
-                this.travelTo(stemFrom, genVal);//a currently
+              
+                let _walk = (node, stemFrom, genVal) => {
+
+                    for (let i = 0; i < node.children.length; i++) { 
+                        console.log(i, node.children[i]);
+                        if (node.children){_walk(node.children[i], stemFrom, genVal); }
+                    }
+                    if (node.value === stemFrom){
+
+                        console.log('match found');
+                        console.log(node.children)
+                        node.children.push(new Node(genVal));
+                        console.log(node.children);
+                    }
+                }
+                
+                _walk(this.root, stemFrom, genVal);
             }
 
         }
             
-        travelTo(targetVal){
+        // travelTo(targetVal){
 
-            // console.log('travelTo currentNode: ' + currentNode.children);//315 root node w/ children
+        //     // console.log('travelTo currentNode: ' + currentNode.children);//315 root node w/ children
 
-            let _walk = (node) => {
+        //     let _walk = (node) => {
 
-                for (let i = 0; i < node.children.length; i++) { 
-                    console.log(i, node.children[i]);
-                    if (node.children){_walk(node.children[i]); }
-                }
-                if (node.value === targetVal){
-                    console.log('match found');
+        //         for (let i = 0; i < node.children.length; i++) { 
+        //             console.log(i, node.children[i]);
+        //             if (node.children){_walk(node.children[i]); }
+        //         }
+        //         if (node.value === targetVal){
+        //             console.log('match found');
                     
-                    console.log(node.children)
-                    node.children.push('asd');
-                    console.log(node.children)
-                }
-            }
+        //             console.log(node.children)
+        //             node.children.push(new Node('x'));
+        //             node.children.push(new Node('y'));
+        //             console.log('node ' + node);
+        //             console.log(node.children);
+        //         }
+        //     }
             
-            _walk(this.root);
+        //     _walk(this.root);
 
 
           
@@ -67,7 +84,7 @@ const Node = require ('./kway_node.js');
             //   return results;
 
 
-        }
+        // }
         
   
             // //if proGen not called, make reGen root.
@@ -84,18 +101,18 @@ const Node = require ('./kway_node.js');
             
           
 
-        breadthFirstTraversal(){
-            if(!this.root){
-                return null;
-            }
-            return this.breadthFirstTraversalHelper(this.root);
+        // breadthFirstTraversal(){
+        //     if(!this.root){
+        //         return null;
+        //     }
+        //     return this.breadthFirstTraversalHelper(this.root);
 
-        }
+        // }
 
-        breadthFirstTraversalHelper(){
-            //const que = que
-            //check npm for sue and stack :)
-        }
+        // breadthFirstTraversalHelper(){
+        //     //const que = que
+        //     //check npm for sue and stack :)
+        // }
 
 
     }
