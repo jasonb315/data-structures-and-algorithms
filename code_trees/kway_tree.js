@@ -33,7 +33,7 @@ const Node = require ('./kway_node.js');
 
                     for (let i = 0; i < node.children.length; i++) { 
                         console.log(i, node.children[i]);
-                        if (node.children){_walk(node.children[i], stemFrom, genVal); }
+                        _walk(node.children[i], stemFrom, genVal);
                     }
                     if (node.value === stemFrom){
 
