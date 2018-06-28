@@ -26,6 +26,12 @@
   * [17. breadth_first_traversal](#breadth_first_traversal)
   * [18. find-maximum-value](#find-maximum-value)
   * [19. estimates_of_population](#estimates_of_population)
+  * 20-27, schedule amended 
+  * [28. find_mathes](#find_mathes)
+
+  * [31. repeated_word](#repeated_word)
+  * [32. tree_intersection](#tree_intersection)
+  * [33. left_join](#left_join)
 
   <!-- * [XX NAME](#NAME) -->
 
@@ -324,7 +330,7 @@ Write an algorithm that will return this data as quickly as possible.
 
 
 <a id="find_matches"></a>
-## X. find_matches
+## 28. find_matches
 
 #### Challenge
 Write a function that takes a k-ary tree with non-unique values and a target value.
@@ -337,6 +343,55 @@ Avoid utilizing any of the built-in methods available to your language.
 
 [:top: TOP](#contents)
 
+
+
+<a id="repeated_word"></a>
+## 31. repeated_word
+
+#### Challenge
+Write a function that accepts a lengthy string parameter.
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+#### White Board
+
+![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/repeated_word.jpg)
+
+[:top: TOP](#contents)
+
+
+
+<a id="tree_intersection"></a>
+## 32. tree_intersection
+
+#### Challenge
+Write a function called tree_intersection that takes two binary tree parameters.
+Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
+
+#### White Board
+
+![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/tree_intersection.jpg)
+
+[:top: TOP](#contents)
+
+
+
+<a id="left_join"></a>
+## 33. left_join
+
+#### Challenge
+Write a function that LEFT JOINs two hashmaps into a single data structure.
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic.
+LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the result row. If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
+The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic.
+Avoid utilizing any of the library methods available to your language.
+
+#### White Board
+
+![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/left_join.jpg)
+
+[:top: TOP](#contents)
 <!--
 <a id="NAME"></a>
 ## X. NAME
