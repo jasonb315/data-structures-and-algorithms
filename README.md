@@ -26,12 +26,15 @@
   * [17. breadth_first_traversal](#breadth_first_traversal)
   * [18. find-maximum-value](#find-maximum-value)
   * [19. estimates_of_population](#estimates_of_population)
-  * 20-27, schedule amended 
+  * 20-27, schedule amended
   * [28. find_mathes](#find_mathes)
 
   * [31. repeated_word](#repeated_word)
   * [32. tree_intersection](#tree_intersection)
   * [33. left_join](#left_join)
+
+  * [36. mergesort](#mergesort)
+  * [37. quicksort](#quicksort)
 
   <!-- * [XX NAME](#NAME) -->
 
@@ -390,6 +393,30 @@ Avoid utilizing any of the library methods available to your language.
 #### White Board
 
 ![title](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/left_join.jpg)
+
+[:top: TOP](#contents)
+
+<a id="mergesort"></a>
+## 36. mergesort
+
+#### Challenge
+Write a function that accepts an array of unsorted integers, and returns a sorted array by a recursive mergesort algorithm.
+
+#### White Board
+
+![mergesort](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/mergesort.jpg)
+
+[:top: TOP](#contents)
+
+<a id="quicksort"></a>
+## X. quicksort
+
+#### Challenge
+Write a function that accepts an array of integers, and returns an array sorted by a recursive quicksort algorithm.
+
+#### White Board
+
+![quicksort](https://github.com/jasonb315/data-structures-and-algorithms/blob/master/assets/quicksort.jpg)
 
 [:top: TOP](#contents)
 <!--
